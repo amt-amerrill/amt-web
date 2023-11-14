@@ -21,7 +21,6 @@ html {
 body {
   font-family: "Lusitana", Georgia, serif;
   color: #53536c;
-  /*letter-spacing: 3px;*/
 }
 
 * {
@@ -30,8 +29,9 @@ body {
 }
 
 .container {
-  width: 60%;
-  margin: 0 auto;
+  max-width: 1100px;
+  margin: auto auto;
+  width: 100%;
 }
 
 #back-to-top {
@@ -55,7 +55,19 @@ img {
 }
 
 h2 {
+  margin-top: 30px !important;
+  font-family: "Lato", arial, sans-serif;
+  font-size: var(--font-large);
+  padding-bottom: 15px;
+  border-bottom: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ccc;
+
+}
+
+h3 {
   font-family: "Lusitana", Georgia, serif;
+  font-size: var(--font-x-large);
 }
 
 .w3-button {
@@ -71,7 +83,7 @@ h2 {
   margin: auto auto;
   width: 100%;
   height: 80px;
-  background-color: #fff;
+  background: rgba(255, 255, 255, 1) !important;
   -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
@@ -228,9 +240,8 @@ h2 {
   min-height: 300px;
 }
 
-.content h3 {
+.content h2 {
   margin-top: 30px !important;
-  font-family: "Lato", arial, sans-serif;
   padding-bottom: 15px;
   border-bottom: 1px;
   border-bottom-style: solid;
@@ -246,7 +257,7 @@ h2 {
   padding-bottom: 16px;
 }
 
-.leadership.content h2 {
+.leadership.content h3 {
   margin-top: 0 !important;
 }
 
@@ -309,8 +320,7 @@ h2 {
   background: linear-gradient(to right, #29323c, #53536c);
 }
 
-.testimonials h2 {
-  /*font-family: "Lato", arial, sans-serif;*/
+.testimonials h3 {
   color: white;
 }
 
@@ -397,7 +407,7 @@ h2 {
   -moz-box-shadow: none;
 }
 
-.consulting h2 {
+.consulting h3 {
   text-align: center;
 }
 
@@ -512,7 +522,6 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* BG color using AMT styling */
   background: #53536c;
   background: -webkit-linear-gradient(to right, #29323c, #53536c);
   background: linear-gradient(to right, #29323c, #53536c);
@@ -524,11 +533,11 @@ h2 {
   font-size: var(--font-medium-large);
 }
 
-.contact h2 {
+.contact h3 {
   text-align: center;
 }
 
-.contact h3 {
+.contact h2 {
   text-align: left;
 }
 
@@ -599,27 +608,12 @@ textarea {
 }
 
 @media screen and (max-width: 1200px) {
-  .container {
-    width: 80%;
-  }
-  /*.contact.container {
-    width: 80%;
-  }*/
   .contact .short-contact h2 {
-    /*font-family: "Lato", arial, sans-serif;*/
     width: 100%;
-  }
-
-  .why-us .container {
-    width: 80%;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .container {
-    width: 90%;
-  }
-
   .hero h1 {
     font-family: "Lato", arial, sans-serif;
   }
@@ -677,10 +671,6 @@ textarea {
     width: 100%;
   }
 
-  .container {
-    width: 80%;
-  }
-
   .l-cards {
     flex-direction: column;
   }
@@ -702,13 +692,11 @@ textarea {
 
   .c-card {
     width: 100%;
-    float: none;
     margin-top: 0px !important;
     padding: 25px;
   }
 
   .c-card-left {
-    float: none;
     border-right: 0px;
     border-right-style: none;
     border-bottom: 1px;
@@ -717,7 +705,6 @@ textarea {
   }
 
   .c-card-right {
-    float: none;
     border-bottom: 1px;
     border-bottom-style: solid;
     border-bottom-color: #ccc;
@@ -741,7 +728,6 @@ textarea {
   }
 
   .contact {
-    /*flex-direction: row;*/
     justify-content: center;
   }
 
@@ -752,7 +738,6 @@ textarea {
   }
 
   .contact .short-contact h2 {
-    /*font-family: "Lato", arial, sans-serif;*/
     width: fit-content;
   }
 
